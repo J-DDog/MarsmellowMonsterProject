@@ -33,5 +33,16 @@ public class MarshmallowMonster
 		System.out.println("His name is " + monsterName);
 		System.out.println("He has " + monsterEyes + " Eyes, " + monsterNoses + " Noses,\nSadly he only has " + monsterHair + " Hairs On his head");
 		System.out.println("To Make up for it he has " + monsterLegs + " Legs, And to cap it all off, He has " + monsterAntenna + " Antennas");
+		System.out.println();
+		
 	}
+	
+	public String toString()
+	{
+		String monster = "This monster has " + monsterEyes + " eyes, and its' name is " + monsterName;
+		
+		return monster;
+		
+	}
+	
 }

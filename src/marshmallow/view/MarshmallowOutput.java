@@ -6,4 +6,5 @@ public class MarshmallowOutput
 	{
 		System.out.println("My monster info is: " + info);
 	}
+	
 }
