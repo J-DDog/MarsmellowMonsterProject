@@ -9,6 +9,7 @@ public class MonsterRunner
 	{
 		MonsterController myController = new MonsterController();
 		myController.start();
+		
 	}
 
 }

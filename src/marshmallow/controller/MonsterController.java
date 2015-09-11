@@ -21,12 +21,14 @@ public class MonsterController
 		
 		JaredMonster = new MarshmallowMonster(name, eyes, noses, hair, legs, hasBellyButton, antenna);
 		myOutput = new MarshmallowOutput();
+		
 	}
 	
 	public void start()
 	{
 		JaredMonster.printMonster();
 		myOutput.displayMonsterInfo(JaredMonster.toString());
+		
 	}
 	
 	
