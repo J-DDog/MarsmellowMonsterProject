@@ -28,8 +28,13 @@ public class MonsterController
 	{
 		JaredMonster.printMonster();
 		myOutput.displayMonsterInfo(JaredMonster.toString());
-		
+		askQuestions();
+		myOutput.displayMonsterInfo("New Monster Info" + JaredMonster.toString());
 	}
 	
+	private void askQuestions()
+	{
+		
+	}
 	
 }

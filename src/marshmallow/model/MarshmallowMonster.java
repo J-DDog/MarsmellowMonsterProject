@@ -26,6 +26,78 @@ public class MarshmallowMonster
 		this.monsterAntenna = monsterAntenna;
 		
 	}
+	
+	//Getters & Setters
+	public String getMonsterName()
+	{
+		return monsterName;
+	}
+	
+	public int getMonstEyes()
+	{
+		return monsterEyes;
+	}
+	
+	public int getMonsterNoses()
+	{
+		return monsterNoses;
+	}
+	
+	public double getMonsterHair()
+	{
+		return monsterHair;
+	}
+	
+	public double getMonsterLegs()
+	{
+		return monsterLegs;
+	}
+	
+	public int getMonsterAntenna()
+	{
+		return monsterAntenna;
+	}
+	
+	public boolean getMonsterBellyButton()
+	{
+		return monsterBellyButton;
+	}
+	
+	
+	public void setMonsterName(String monsterName)
+	{
+		this.monsterName = monsterName;
+	}
+	
+	public void setMonsterEyes(int mnonsterEyes)
+	{
+		this.monsterEyes = monsterEyes;
+	}
+	
+	public void setMonsterNoses(int Noses)
+	{
+		this.monsterNoses = monsterNoses;
+	}
+	
+	public void setMonsterHair(double monsterHair)
+	{
+		this.monsterHair = monsterHair;
+	}
+	
+	public void setMonsterLegs(double monsterLegs)
+	{
+		this.monsterLegs = monsterLegs;
+	}
+	
+	public void setMonsterAntenna(int monsterAntenna)
+	{
+		this.monsterAntenna = monsterAntenna;
+	}
+	
+	public void setMonsterBellyButton(boolean monsterBellyButton)
+	{
+		this.monsterBellyButton = monsterBellyButton;
+	}
 
 	public void printMonster()
 	{
