@@ -30,10 +30,9 @@ public class MonsterController
 	
 	public void start()
 	{
-		JaredMonster.printMonster();
 		myOutput.displayMonsterInfo(JaredMonster.toString());
-		askQuestions();
-		myOutput.displayMonsterInfo("New Monster Info: " + JaredMonster.toString());
+		makeUserMonster();
+		myOutput.displayMonsterInfo("new Monster Info" + UserMonster.toString());
 	}
 	
 	private void askQuestions()
