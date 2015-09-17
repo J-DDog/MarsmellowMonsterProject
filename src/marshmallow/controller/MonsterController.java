@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class MonsterController
 {
+	private MarshmallowMonster UserMonster;
 	private MarshmallowMonster JaredMonster;
 	private MarshmallowOutput myOutput;
 	private Scanner monsterScanner;
@@ -57,5 +58,52 @@ public class MonsterController
 		JaredMonster.setMonsterBellyButton(monsterScanner.nextBoolean());
 	}
 	
-	
+	/*
+	 * This Methoud will Take information from the user to make an instance of 
+	 */
+	private void makeUserMonster()
+	{
+		//Step one: Get Variables
+		String userName;
+		int userEyes;
+		int userNoseCount;
+		int userAntenna;
+		double userHair;
+		double userLegs;
+		boolean userBellyButton;
+		
+		//Step two: Define variables by the using Scanner to get user input.
+		System.out.println("Type in your name for your monster.");
+		userName = monsterScanner.next();
+		monsterScanner.nextLine();
+		
+		System.out.println("Type in the number of eyes for your monster.");
+		userEyes = monsterScanner.nextInt();
+		monsterScanner.nextLine();
+		
+		System.out.println("Type in the number of noses for this monster.");
+		userNoseCount = monsterScanner.nextInt();
+		monsterScanner.nextLine();
+		
+		System.out.println("Type in the number of Antennas this monster has.");
+		userAntenna = monsterScanner.nextInt();
+		monsterScanner.nextLine();
+		
+		System.out.println("How much hair does your monster have? Type in a floating pint or a double.");
+		userHair = monsterScanner.nextDouble();
+		monsterScanner.nextLine();
+		
+		System.out.println("How many Legs??????");
+		userLegs = monsterScanner.nextDouble();
+		monsterScanner.nextLine();
+		
+		System.out.println("Does it have a  bellyButton? Type true of false");
+		userBellyButton = monsterScanner.nextBoolean();
+		monsterScanner.nextLine();
+		
+		//Step three; Make a monster - use the Constructor!!! Reminder that order of parameters matters!!
+		UserMonster = new MarshmallowMonster(userName, userEyes, userNoseCount, userHair, userLegs, userBellyButton, userAntenna);
+		
+		
+	}
 }
