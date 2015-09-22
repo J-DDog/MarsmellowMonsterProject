@@ -30,6 +30,7 @@ public class MonsterController
 	
 	public void start()
 	{
+		myOutput.displayAnyText("yo Hows it going? ");
 		myOutput.displayMonsterConsole(JaredMonster.toString());
 		myOutput.displayMonsterGUI(JaredMonster.toString());
 		makeUserMonster();

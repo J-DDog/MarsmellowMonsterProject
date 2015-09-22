@@ -22,4 +22,10 @@ public class MarshmallowOutput
 		
 	}
 	
+	public void displayAnyText(String text)
+	{
+		JOptionPane.showMessageDialog(null, text);
+		
+	}
+	
 }
