@@ -12,7 +12,8 @@ public class MarshmallowOutput
 	
 	public void displayMonsterGUI(String info)
 	{
-		JOptionPane.showMessageDialog(null, "TEST");
+		JOptionPane.showMessageDialog(null, "My monster info is: " + info);
+		
 	}
 	
 }
