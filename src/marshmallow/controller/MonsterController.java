@@ -30,9 +30,12 @@ public class MonsterController
 	
 	public void start()
 	{
-		myOutput.displayMonsterInfo(JaredMonster.toString());
+		myOutput.displayMonsterConsole(JaredMonster.toString());
+		myOutput.displayMonsterGUI(JaredMonster.toString());
 		makeUserMonster();
-		myOutput.displayMonsterInfo("new Monster Info" + UserMonster.toString());
+		myOutput.displayMonsterGUI("new Monster Info" + UserMonster.toString());
+		myOutput.displayMonsterHair(UserMonster.getMonsterHair());
+		
 	}
 	
 	private void askQuestions()
@@ -96,7 +99,7 @@ public class MonsterController
 		userLegs = monsterScanner.nextDouble();
 		monsterScanner.nextLine();
 		
-		System.out.println("Does it have a  bellyButton? Type true of false");
+		System.out.println("Does it have a bellyButton? Type true of false");
 		userBellyButton = monsterScanner.nextBoolean();
 		monsterScanner.nextLine();
 		
