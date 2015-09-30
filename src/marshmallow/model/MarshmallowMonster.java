@@ -69,12 +69,12 @@ public class MarshmallowMonster
 		this.monsterName = monsterName;
 	}
 	
-	public void setMonsterEyes(int string)
+	public void setMonsterEyes(int monsterEyes)
 	{
 		this.monsterEyes = monsterEyes;
 	}
 	
-	public void setMonsterNoses(int Noses)
+	public void setMonsterNoses(int monsterNoses)
 	{
 		this.monsterNoses = monsterNoses;
 	}
