@@ -81,13 +81,25 @@ public class MarshmallowOutput
 	
 	public boolean grabAnswerBoolean(String query)
 	{
-		boolean isLoop = true, info = false;
+		boolean isLoop = true;
+		String responce;
 		while (isLoop)
 		{
-			
+			responce = grabAnswer(query);
+			if (responce.toLowerCase() == "true")
+			{
+				return true;
+			}
+			if (responce.toLowerCase() == "false")
+			{
+				return false;
+			}
+			else
+			{
+				
+			}
 		}
 		
-		return info;
 	}
 	
 }
