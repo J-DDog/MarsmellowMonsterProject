@@ -57,14 +57,11 @@ public class MonsterController
 		//Step two: Define variables by the using Scanner to get user input.
 		userName = myOutput.grabAnswer("Type in your name for your monster.");
 		
-		
 		userEyes = myOutput.grabAnswerInt("Type in the number of eyes for your monster.");
 		
-		myOutput.grabAnswer("Type in the number of noses for this monster.");
-		userNoseCount = monsterScanner.nextInt();
+		userNoseCount = myOutput.grabAnswerInt("Type in the number of noses for this monster.");
 		
-		myOutput.grabAnswer("Type in the number of Antennas this monster has.");
-		userAntenna = monsterScanner.nextInt();
+		userAntenna = myOutput.grabAnswerInt("Type in the number of Antennas this monster has.");
 		
 		myOutput.grabAnswer("How much hair does your monster have? Type in a floating pint or a double.");
 		userHair = monsterScanner.nextDouble();
