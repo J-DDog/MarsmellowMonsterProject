@@ -67,8 +67,7 @@ public class MonsterController
 		
 		userLegs = myOutput.grabAnswerDouble("How many Legs??????");
 		
-		myOutput.grabAnswer("Does it have a bellyButton? Type true of false");
-		userBellyButton = monsterScanner.nextBoolean();
+		userBellyButton = myOutput.grabAnswerBoolean("Does it have a bellyButton? Type true of false");
 		
 		//Step three; Make a monster - use the Constructor!!! Reminder that order of parameters matters!!
 		UserMonster = new MarshmallowMonster(userName, userEyes, userNoseCount, userHair, userLegs, userBellyButton, userAntenna);
