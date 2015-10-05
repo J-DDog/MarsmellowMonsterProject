@@ -4,21 +4,22 @@ import javax.swing.JOptionPane;
 
 public class MarshmallowOutput
 {
+	
+	public void displayMessage(String message)
+	{
+		JOptionPane.showMessageDialog(null, message);
+		
+	}
+	
 	public void displayMonsterConsole(String info)
 	{
 		System.out.println("My monster info is: " + info);
 		
 	}
 	
-	public void displayMessage(String message)
+	public void displayMonsterGUI(String message)
 	{
 		JOptionPane.showMessageDialog(null, "My monster info is: " + message);
-		
-	}
-	
-	public void displayMonsterHair(double monsterHair)
-	{
-		JOptionPane.showMessageDialog(null, "This Monsters has " + monsterHair + " Hairs on its head.");
 		
 	}
 	

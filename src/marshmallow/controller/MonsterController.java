@@ -32,10 +32,9 @@ public class MonsterController
 	{
 		myOutput.displayAnyText("yo Hows it going? ");
 		myOutput.displayMonsterConsole(JaredMonster.toString());
-		myOutput.displayMessage(JaredMonster.toString());
+		myOutput.displayMonsterGUI(JaredMonster.toString());
 		makeUserMonster();
-		myOutput.displayMessage("new Monster Info" + UserMonster.toString());
-		myOutput.displayMonsterHair(UserMonster.getMonsterHair());
+		myOutput.displayMonsterGUI("new Monster Info" + UserMonster.toString());
 		
 	}
 	
