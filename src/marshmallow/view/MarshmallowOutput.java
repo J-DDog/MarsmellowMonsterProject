@@ -81,24 +81,28 @@ public class MarshmallowOutput
 	
 	public boolean grabAnswerBoolean(String query)
 	{
-		boolean isLoop = true;
+		boolean isLoop = true, info = false;
 		String responce;
 		while (isLoop)
 		{
 			responce = grabAnswer(query);
 			if (responce.toLowerCase() == "true")
 			{
-				return true;
+				info = true;
+				isLoop = false;
 			}
 			if (responce.toLowerCase() == "false")
 			{
-				return false;
+				info = false;
+				isLoop = false;
 			}
 			else
 			{
-				
+				displayMessage("Error not a boolean - try again");
 			}
+			
 		}
+		return info;
 		
 	}
 	
