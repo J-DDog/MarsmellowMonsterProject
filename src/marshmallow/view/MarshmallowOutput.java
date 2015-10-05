@@ -50,7 +50,28 @@ public class MarshmallowOutput
 			}
 			catch(NumberFormatException error)
 			{
-				displayMessage("Error Not a int - try again");
+				displayMessage("Error Not a Integer - try again");
+			}
+				
+		}
+		return i;
+		
+	}
+	
+	public double grabAnswerDouble(String query)
+	{
+		boolean x = true;
+		double i = 0;
+		while (x)
+		{
+			try 
+			{
+				i = Double.parseDouble(grabAnswer(query));
+				x = false;
+			}
+			catch(NumberFormatException error)
+			{
+				displayMessage("Error Not a Double - try again");
 			}
 				
 		}
