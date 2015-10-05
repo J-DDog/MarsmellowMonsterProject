@@ -28,4 +28,13 @@ public class MarshmallowOutput
 		
 	}
 	
+	public String grabAnswer(String query)
+	{
+		String answer = "";
+		
+		answer = JOptionPane.showInputDialog(null, query);
+		
+		return answer;
+	}
+	
 }

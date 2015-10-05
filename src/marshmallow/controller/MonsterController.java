@@ -34,8 +34,8 @@ public class MonsterController
 		myOutput.displayMonsterConsole(JaredMonster.toString());
 		myOutput.displayMonsterGUI(JaredMonster.toString());
 		makeUserMonster();
-		//myOutput.displayMonsterGUI("new Monster Info" + UserMonster.toString());
-		//myOutput.displayMonsterHair(UserMonster.getMonsterHair());
+		myOutput.displayMonsterGUI("new Monster Info" + UserMonster.toString());
+		myOutput.displayMonsterHair(UserMonster.getMonsterHair());
 		
 	}
 	
@@ -76,7 +76,7 @@ public class MonsterController
 		boolean userBellyButton;
 		
 		//Step two: Define variables by the using Scanner to get user input.
-		System.out.println("Type in your name for your monster.");
+		myOutput.grabAnswer("Type in your name for your monster.");
 		userName = monsterScanner.next();
 		monsterScanner.nextLine();
 		
