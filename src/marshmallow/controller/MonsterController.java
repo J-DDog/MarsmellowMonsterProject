@@ -63,11 +63,9 @@ public class MonsterController
 		
 		userAntenna = myOutput.grabAnswerInt("Type in the number of Antennas this monster has.");
 		
-		myOutput.grabAnswer("How much hair does your monster have? Type in a floating pint or a double.");
-		userHair = monsterScanner.nextDouble();
+		userHair = myOutput.grabAnswerDouble("How much hair does your monster have? Type in a floating pint or a double.");
 		
-		myOutput.grabAnswer("How many Legs??????");
-		userLegs = monsterScanner.nextDouble();
+		userLegs = myOutput.grabAnswerDouble("How many Legs??????");
 		
 		myOutput.grabAnswer("Does it have a bellyButton? Type true of false");
 		userBellyButton = monsterScanner.nextBoolean();
