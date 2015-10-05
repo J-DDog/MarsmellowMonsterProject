@@ -32,9 +32,9 @@ public class MonsterController
 	{
 		myOutput.displayAnyText("yo Hows it going? ");
 		myOutput.displayMonsterConsole(JaredMonster.toString());
-		myOutput.displayMonsterGUI(JaredMonster.toString());
+		myOutput.displayMessage(JaredMonster.toString());
 		makeUserMonster();
-		myOutput.displayMonsterGUI("new Monster Info" + UserMonster.toString());
+		myOutput.displayMessage("new Monster Info" + UserMonster.toString());
 		myOutput.displayMonsterHair(UserMonster.getMonsterHair());
 		
 	}
@@ -55,11 +55,10 @@ public class MonsterController
 		boolean userBellyButton;
 		
 		//Step two: Define variables by the using Scanner to get user input.
-		myOutput.grabAnswer("Type in your name for your monster.");
-		userName = monsterScanner.next();
+		userName = myOutput.grabAnswer("Type in your name for your monster.");
 		
-		myOutput.grabAnswer("Type in the number of eyes for your monster.");
-		userEyes = monsterScanner.nextInt();
+		
+		userEyes = myOutput.grabAnswerInt("Type in the number of eyes for your monster.");
 		
 		myOutput.grabAnswer("Type in the number of noses for this monster.");
 		userNoseCount = monsterScanner.nextInt();

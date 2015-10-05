@@ -10,9 +10,9 @@ public class MarshmallowOutput
 		
 	}
 	
-	public void displayMonsterGUI(String info)
+	public void displayMessage(String message)
 	{
-		JOptionPane.showMessageDialog(null, "My monster info is: " + info);
+		JOptionPane.showMessageDialog(null, "My monster info is: " + message);
 		
 	}
 	
@@ -35,6 +35,27 @@ public class MarshmallowOutput
 		answer = JOptionPane.showInputDialog(null, query);
 		
 		return answer;
+	}
+	
+	public int grabAnswerInt(String query)
+	{
+		boolean x = true;
+		int i = 0;
+		while (x)
+		{
+			try 
+			{
+				i = Integer.parseInt(grabAnswer(query));
+				x = false;
+			}
+			catch(NumberFormatException error)
+			{
+				displayMessage("Error Not a int - try again");
+			}
+				
+		}
+		return i;
+		
 	}
 	
 }
