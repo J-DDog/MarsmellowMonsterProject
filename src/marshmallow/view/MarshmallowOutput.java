@@ -39,14 +39,14 @@ public class MarshmallowOutput
 	
 	public int grabAnswerInt(String query)
 	{
-		boolean x = true;
-		int i = 0;
-		while (x)
+		boolean isLoop = true;
+		int info = 0;
+		while (isLoop)
 		{
 			try 
 			{
-				i = Integer.parseInt(grabAnswer(query));
-				x = false;
+				info = Integer.parseInt(grabAnswer(query));
+				isLoop = false;
 			}
 			catch(NumberFormatException error)
 			{
@@ -54,20 +54,20 @@ public class MarshmallowOutput
 			}
 				
 		}
-		return i;
+		return info;
 		
 	}
 	
 	public double grabAnswerDouble(String query)
 	{
-		boolean x = true;
-		double i = 0;
-		while (x)
+		boolean isLoop = true;
+		double info = 0;
+		while (isLoop)
 		{
 			try 
 			{
-				i = Double.parseDouble(grabAnswer(query));
-				x = false;
+				info = Double.parseDouble(grabAnswer(query));
+				isLoop = false;
 			}
 			catch(NumberFormatException error)
 			{
@@ -75,8 +75,19 @@ public class MarshmallowOutput
 			}
 				
 		}
-		return i;
+		return info;
 		
+	}
+	
+	public boolean grabAnswerBoolean(String query)
+	{
+		boolean isLoop = true, info = false;
+		while (isLoop)
+		{
+			
+		}
+		
+		return info;
 	}
 	
 }
